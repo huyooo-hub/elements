@@ -19,15 +19,15 @@ A component library to compose websites powered by [design tokens](https://desig
 In your Nuxt project, install the package:
 
 ```bash
-pnpm add -D @nuxt-themes/elements
+pnpm add -D @huyooo-hub/elements
 ```
 
 Then in your `nuxt.config.ts`, add it to the `extends` array:
 
 ```ts
 export default defineNuxtConfig({
-  extends: ['@nuxt-themes/elements']
-})
+  extends: ['@huyooo-hub/elements'],
+});
 ```
 
 Start using the elements to build your website, checkout the list of elements on [elements.nuxt.dev](https://elements.nuxt.dev).
@@ -37,6 +37,7 @@ Start using the elements to build your website, checkout the list of elements on
 An element is **a Vue component** made to be used inside the `content/` directory with the [MDC syntax](https://content.nuxtjs.org/guide/writing/mdc).
 
 The component can have:
+
 - Props to receive data from the editor (generated form)
 - Slots using the [`<ContentSlot>`](https://content.nuxtjs.org/api/components/content-slot) component to pass MDC to the component
 
@@ -91,6 +92,7 @@ pnpm generate
 ```
 
 Preview the built documentation:
+
 ```bash
 pnpm preview
 ```
@@ -102,8 +104,8 @@ To use the elements in development in your project:
 
 ```ts
 export default defineNuxtConfig({
-  extends: '/Users/atinux/Projects/nuxt-themes/elements'
-})
+  extends: '/Users/atinux/Projects/nuxt-themes/elements',
+});
 ```
 
 ## License
@@ -111,20 +113,16 @@ export default defineNuxtConfig({
 [MIT License](./LICENSE)
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/@nuxt-themes/elements/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/@nuxt-themes/elements
 
-[npm-downloads-src]: https://img.shields.io/npm/dt/@nuxt-themes/elements.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/@nuxt-themes/elements
-
+[npm-version-src]: https://img.shields.io/npm/v/@huyooo-hub/elements/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/@huyooo-hub/elements
+[npm-downloads-src]: https://img.shields.io/npm/dt/@huyooo-hub/elements.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/@huyooo-hub/elements
 [license-src]: https://img.shields.io/github/license/nuxt-themes/elements.svg?style=flat&colorA=18181B&colorB=28CF8D
 [license-href]: https://github.com/nuxt-themes/elements/blob/main/LICENSE
-
 [nuxt-studio-src]: https://img.shields.io/badge/Nuxt%20Studio-18181B?&logo=nuxt.js&logoColor=3BB5EC
 [nuxt-studio-href]: https://nuxt.studio/themes/elements
-
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?&logo=nuxt.js
 [nuxt-href]: https://nuxt.com
-
 [volta-src]: https://user-images.githubusercontent.com/904724/209143798-32345f6c-3cf8-4e06-9659-f4ace4a6acde.svg
 [volta-href]: https://volta.net/nuxt-themes/elements?utm_source=readme_elements
