@@ -90,16 +90,16 @@ css({
         insetInlineStart: 0,
         width: '100%',
         height: '100%',
-        background: '{color.gray.500}',
+        background: '{huyooo.color.gray.500}',
         opacity: '0.75',
         '@dark': {
-          background: '{color.gray.900}',
+          background: '{huyooo.color.gray.900}',
         }
       },
       '.content': {
         zIndex: 10,
         fontWeight: '{fontWeight.semibold}',
-        color: '{color.gray.100}',
+        color: '{huyooo.color.gray.100}',
         fontSize: '{fontSize.lg}'
       }
     },
@@ -118,7 +118,7 @@ css({
             width: '{huyooo.space.3}',
             height: '{huyooo.space.3}',
             borderRadius: '{radii.full}',
-            background: '{color.red.400}'
+            background: '{huyooo.color.red.400}'
           },
           '&:nth-child(2)': {
             width: '{huyooo.space.3}',

@@ -36,15 +36,15 @@ defineProps({
 <style lang="ts" scoped>
 css({
   '.button-link': {
-    '--button-primary': (props) => `{color.${props.color}.600}`,
-    '--button-secondary': (props) => `{color.${props.color}.500}`,
+    '--button-primary': (props) => `{huyooo.color.${props.color}.600}`,
+    '--button-secondary': (props) => `{huyooo.color.${props.color}.500}`,
     display: 'inline-flex',
     flex: 'none',
     alignItems: 'center',
     borderRadius: '{radii.md}',
     transition: 'color 100ms ease-in-out',
     fontWeight: '{fontWeight.bold}',
-    color: '{color.white}',
+    color: '{huyooo.color.white}',
     backgroundColor: '{button.primary}',
     border: '1px solid transparent',
     '&:hover': {

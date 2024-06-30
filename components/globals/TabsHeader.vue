@@ -76,11 +76,11 @@ watch(
 css({
   ".tabs-header": {
     position: 'relative',
-    background: '{color.gray.200}',
-    color: '{color.red.700}',
+    background: '{huyooo.color.gray.200}',
+    color: '{huyooo.color.red.700}',
     '@dark': {
-      color: '{color.red.500}',
-      background: '{color.gray.800}',
+      color: '{huyooo.color.red.500}',
+      background: '{huyooo.color.gray.800}',
     },
     '.tabs': {
       position: 'relative',
@@ -99,23 +99,23 @@ css({
         userSelect: 'none',
         transition: 'color 100ms, background 100ms',
         '&.not-active': {
-          color: '{color.gray.700}',
+          color: '{huyooo.color.gray.700}',
           '&:hover': {
-            color: '{color.gray.800}',
-            background: '{color.gray.300}'
+            color: '{huyooo.color.gray.800}',
+            background: '{huyooo.color.gray.300}'
           },
           '@dark': {
-            color: '{color.gray.200}',
+            color: '{huyooo.color.gray.200}',
             '&:hover': {
-              color: '{color.gray.200}',
-              background: '{color.gray.700}'
+              color: '{huyooo.color.gray.200}',
+              background: '{huyooo.color.gray.700}'
             },
           }
         },
         '&.active': {
-          color: '{color.gray.500}',
+          color: '{huyooo.color.gray.500}',
           '@dark': {
-            color: '{color.gray.300}',
+            color: '{huyooo.color.gray.300}',
           }
         }
       },
@@ -129,9 +129,9 @@ css({
           display: 'flex',
           width: '100%',
           height: '100%',
-          backgroundColor: '{color.gray.100}',
+          backgroundColor: '{huyooo.color.gray.100}',
           '@dark': {
-            backgroundColor: '{color.gray.900}',
+            backgroundColor: '{huyooo.color.gray.900}',
           }
         }
       }

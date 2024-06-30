@@ -89,7 +89,7 @@ css({
     display: 'inline-block',
     my: '{huyooo.space.8}',
     overflow: 'hidden',
-    background: '{color.gray.900}',
+    background: '{huyooo.color.gray.900}',
     borderRadius: '{radii.lg}',
     '.loaded': {
       position: 'absolute',

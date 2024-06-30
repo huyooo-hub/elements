@@ -22,8 +22,8 @@ export default defineTheme({
       primary: {
         color: {
           static: {
-            initial: '{color.gray.900}',
-            dark: '{color.gray.50}',
+            initial: '{huyooo.color.gray.900}',
+            dark: '{huyooo.color.gray.50}',
           },
           // TODO: add `hover` state
           hover: {},
@@ -32,12 +32,12 @@ export default defineTheme({
       secondary: {
         color: {
           static: {
-            initial: '{color.gray.500}',
-            dark: '{color.gray.400}',
+            initial: '{huyooo.color.gray.500}',
+            dark: '{huyooo.color.gray.400}',
           },
           hover: {
-            initial: '{color.gray.700}',
-            dark: '{color.gray.200}',
+            initial: '{huyooo.color.gray.700}',
+            dark: '{huyooo.color.gray.200}',
           },
         },
       },
@@ -73,9 +73,9 @@ export default defineTheme({
       // TODO: add filter tokens in `tokens` package
       filter: 'saturate(200%) blur(20px)',
       background: {
-        // TODO: rgba 80% from color.white
+        // TODO: rgba 80% from huyooo.color.white
         initial: '#fffc',
-        // TODO: rgba 80% from color.black
+        // TODO: rgba 80% from huyooo.color.black
         dark: '#0c0d0ccc',
       },
     },
@@ -91,18 +91,18 @@ export default defineTheme({
       },
       primary: {
         static: {
-          initial: '{color.gray.100}',
-          dark: '{color.gray.900}',
+          initial: '{huyooo.color.gray.100}',
+          dark: '{huyooo.color.gray.900}',
         },
         hover: {
-          initial: '{color.gray.200}',
-          dark: '{color.gray.800}',
+          initial: '{huyooo.color.gray.200}',
+          dark: '{huyooo.color.gray.800}',
         },
       },
       secondary: {
         static: {
-          initial: '{color.gray.200}',
-          dark: '{color.gray.800}',
+          initial: '{huyooo.color.gray.200}',
+          dark: '{huyooo.color.gray.800}',
         },
         hover: {
           initial: '',
@@ -122,8 +122,8 @@ export default defineTheme({
       },
       background: {
         base: {
-          initial: '{color.gray.100}',
-          dark: '{color.gray.900}',
+          initial: '{huyooo.color.gray.100}',
+          dark: '{huyooo.color.gray.900}',
         },
       },
     },
@@ -140,160 +140,160 @@ export default defineTheme({
       primary: {
         color: {
           primary: {
-            initial: '{color.primary.600}',
-            dark: '{color.primary.400}',
+            initial: '{huyooo.color.primary.600}',
+            dark: '{huyooo.color.primary.400}',
           },
           secondary: {
-            initial: '{color.primary.700}',
-            dark: '{color.primary.200}',
+            initial: '{huyooo.color.primary.700}',
+            dark: '{huyooo.color.primary.200}',
           },
         },
         backgroundColor: {
           primary: {
-            initial: '{color.primary.50}',
-            dark: '{color.primary.900}',
+            initial: '{huyooo.color.primary.50}',
+            dark: '{huyooo.color.primary.900}',
           },
           secondary: {
-            initial: '{color.primary.100}',
-            dark: '{color.primary.800}',
+            initial: '{huyooo.color.primary.100}',
+            dark: '{huyooo.color.primary.800}',
           },
         },
         borderColor: {
           primary: {
-            initial: '{color.primary.100}',
-            dark: '{color.primary.800}',
+            initial: '{huyooo.color.primary.100}',
+            dark: '{huyooo.color.primary.800}',
           },
           secondary: {
-            initial: '{color.primary.200}',
-            dark: '{color.primary.700}',
+            initial: '{huyooo.color.primary.200}',
+            dark: '{huyooo.color.primary.700}',
           },
         },
       },
       info: {
         color: {
           primary: {
-            initial: '{color.blue.500}',
-            dark: '{color.blue.400}',
+            initial: '{huyooo.color.blue.500}',
+            dark: '{huyooo.color.blue.400}',
           },
           secondary: {
-            initial: '{color.blue.600}',
-            dark: '{color.blue.200}',
+            initial: '{huyooo.color.blue.600}',
+            dark: '{huyooo.color.blue.200}',
           },
         },
         backgroundColor: {
           primary: {
-            initial: '{color.blue.50}',
-            dark: '{color.blue.900}',
+            initial: '{huyooo.color.blue.50}',
+            dark: '{huyooo.color.blue.900}',
           },
           secondary: {
-            initial: '{color.blue.100}',
-            dark: '{color.blue.800}',
+            initial: '{huyooo.color.blue.100}',
+            dark: '{huyooo.color.blue.800}',
           },
         },
         borderColor: {
           primary: {
-            initial: '{color.blue.100}',
-            dark: '{color.blue.800}',
+            initial: '{huyooo.color.blue.100}',
+            dark: '{huyooo.color.blue.800}',
           },
           secondary: {
-            initial: '{color.blue.200}',
-            dark: '{color.blue.700}',
+            initial: '{huyooo.color.blue.200}',
+            dark: '{huyooo.color.blue.700}',
           },
         },
       },
       success: {
         color: {
           primary: {
-            initial: '{color.green.500}',
-            dark: '{color.green.400}',
+            initial: '{huyooo.color.green.500}',
+            dark: '{huyooo.color.green.400}',
           },
           secondary: {
-            initial: '{color.green.600}',
-            dark: '{color.green.200}',
+            initial: '{huyooo.color.green.600}',
+            dark: '{huyooo.color.green.200}',
           },
         },
         backgroundColor: {
           primary: {
-            initial: '{color.green.50}',
-            dark: '{color.green.900}',
+            initial: '{huyooo.color.green.50}',
+            dark: '{huyooo.color.green.900}',
           },
           secondary: {
-            initial: '{color.green.100}',
-            dark: '{color.green.800}',
+            initial: '{huyooo.color.green.100}',
+            dark: '{huyooo.color.green.800}',
           },
         },
         borderColor: {
           primary: {
-            initial: '{color.green.100}',
-            dark: '{color.green.800}',
+            initial: '{huyooo.color.green.100}',
+            dark: '{huyooo.color.green.800}',
           },
           secondary: {
-            initial: '{color.green.200}',
-            dark: '{color.green.700}',
+            initial: '{huyooo.color.green.200}',
+            dark: '{huyooo.color.green.700}',
           },
         },
       },
       warning: {
         color: {
           primary: {
-            initial: '{color.yellow.600}',
-            dark: '{color.yellow.400}',
+            initial: '{huyooo.color.yellow.600}',
+            dark: '{huyooo.color.yellow.400}',
           },
           secondary: {
-            initial: '{color.yellow.700}',
-            dark: '{color.yellow.200}',
+            initial: '{huyooo.color.yellow.700}',
+            dark: '{huyooo.color.yellow.200}',
           },
         },
         backgroundColor: {
           primary: {
-            initial: '{color.yellow.50}',
-            dark: '{color.yellow.900}',
+            initial: '{huyooo.color.yellow.50}',
+            dark: '{huyooo.color.yellow.900}',
           },
           secondary: {
-            initial: '{color.yellow.100}',
-            dark: '{color.yellow.800}',
+            initial: '{huyooo.color.yellow.100}',
+            dark: '{huyooo.color.yellow.800}',
           },
         },
         borderColor: {
           primary: {
-            initial: '{color.yellow.100}',
-            dark: '{color.yellow.800}',
+            initial: '{huyooo.color.yellow.100}',
+            dark: '{huyooo.color.yellow.800}',
           },
           secondary: {
-            initial: '{color.yellow.200}',
-            dark: '{color.yellow.700}',
+            initial: '{huyooo.color.yellow.200}',
+            dark: '{huyooo.color.yellow.700}',
           },
         },
       },
       danger: {
         color: {
           primary: {
-            initial: '{color.red.500}',
-            dark: '{color.red.300}',
+            initial: '{huyooo.color.red.500}',
+            dark: '{huyooo.color.red.300}',
           },
           secondary: {
-            initial: '{color.red.600}',
-            dark: '{color.red.200}',
+            initial: '{huyooo.color.red.600}',
+            dark: '{huyooo.color.red.200}',
           },
         },
         backgroundColor: {
           primary: {
-            initial: '{color.red.50}',
-            dark: '{color.red.900}',
+            initial: '{huyooo.color.red.50}',
+            dark: '{huyooo.color.red.900}',
           },
           secondary: {
-            initial: '{color.red.100}',
-            dark: '{color.red.800}',
+            initial: '{huyooo.color.red.100}',
+            dark: '{huyooo.color.red.800}',
           },
         },
         borderColor: {
           primary: {
-            initial: '{color.red.100}',
-            dark: '{color.red.800}',
+            initial: '{huyooo.color.red.100}',
+            dark: '{huyooo.color.red.800}',
           },
           secondary: {
-            initial: '{color.red.200}',
-            dark: '{color.red.700}',
+            initial: '{huyooo.color.red.200}',
+            dark: '{huyooo.color.red.700}',
           },
         },
       },

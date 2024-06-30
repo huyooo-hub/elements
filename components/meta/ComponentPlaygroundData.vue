@@ -64,7 +64,7 @@ css({
     '.component-playground-data-section': {
       padding: '{huyooo.space.4}',
       '@dark': {
-        backgroundColor: '{color.gray.900}',
+        backgroundColor: '{huyooo.color.gray.900}',
       }
     }
   }

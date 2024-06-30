@@ -88,12 +88,12 @@ export default defineComponent({
 <style scoped lang="ts">
 css({
   '.component-playground': {
-    border: '1px solid {color.gray.200}',
+    border: '1px solid {huyooo.color.gray.200}',
     borderRadius: '{radii.lg}',
     overflow: 'hidden',
 
     '@dark': {
-      border: '1px solid {color.gray.800}',
+      border: '1px solid {huyooo.color.gray.800}',
     },
 
     '.component-playground-wrapper': {
