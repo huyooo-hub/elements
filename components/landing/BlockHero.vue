@@ -108,27 +108,27 @@ css({
       '.title': {
         color: '{elements.text.primary.color.static}',
         fontWeight: '{huyooo.fontWeight.bold}',
-        letterSpacing: '{letterSpacing.tight}',
+        letterSpacing: '{huyooo.letterSpacing.tight}',
         textAlign: 'center',
-        fontSize: '{text.4xl.fontSize}',
-        lineHeight: '{text.4xl.lineHeight}',
+        fontSize: '{huyooo.text.4xl.fontSize}',
+        lineHeight: '{huyooo.text.4xl.lineHeight}',
         marginBottom: '{huyooo.space.8}',
         px: '{huyooo.space.8}',
         '@sm': {
-          fontSize: '{text.5xl.fontSize}',
-          lineHeight: '{text.5xl.lineHeight}',
+          fontSize: '{huyooo.text.5xl.fontSize}',
+          lineHeight: '{huyooo.text.5xl.lineHeight}',
         },
         '@lg': {
           px: '{huyooo.space.0}',
-          fontSize: '{text.6xl.fontSize}',
-          lineHeight: '{text.6xl.lineHeight}',
+          fontSize: '{huyooo.text.6xl.fontSize}',
+          lineHeight: '{huyooo.text.6xl.lineHeight}',
           textAlign: 'start'
         }
       },
       '.description': {
         marginBottom: '{huyooo.space.12}',
-        fontSize: '{text.lg.fontSize}',
-        lineHeight: '{text.lg.lineHeight}',
+        fontSize: '{huyooo.text.lg.fontSize}',
+        lineHeight: '{huyooo.text.lg.lineHeight}',
         textAlign: 'center',
         color: '{elements.text.secondary.color.static}',
         px: '{huyooo.space.2}',

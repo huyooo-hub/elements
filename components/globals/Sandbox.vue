@@ -91,8 +91,8 @@ css({
     width: '100%',
     height: 'var(--sandbox-height)',
     overflow: 'hidden',
-    fontSize: '{text.3xl.fontSize}',
-    lineHeight: '{text.3xl.lineHeight}',
+    fontSize: '{huyooo.text.3xl.fontSize}',
+    lineHeight: '{huyooo.text.3xl.lineHeight}',
     border: '1px solid {elements.border.secondary.static}',
     borderRadius: '{huyooo.radii.md}',
     iframe: {

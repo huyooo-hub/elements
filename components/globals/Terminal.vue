@@ -100,7 +100,7 @@ css({
         zIndex: 10,
         fontWeight: '{huyooo.fontWeight.semibold}',
         color: '{huyooo.color.gray.100}',
-        fontSize: '{fontSize.lg}'
+        fontSize: '{huyooo.fontSize.lg}'
       }
     },
     '.header': {
@@ -155,7 +155,7 @@ css({
       flex: '1 1 0%',
       padding: '{huyooo.space.4}',
       fontFamily: '{huyooo.font.mono}',
-      fontSize: '{text.sm.fontSize}',
+      fontSize: '{huyooo.text.sm.fontSize}',
       '.line': {
         display: 'flex',
         marginBottom: '{huyooo.space.1}',

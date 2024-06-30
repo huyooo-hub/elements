@@ -43,14 +43,14 @@ css({
     },
     '.title': {
       marginBottom: '{huyooo.space.2}',
-      fontSize: '{text.lg.fontSize}',
-      lineHeight: '{text.lg.lineHeight}',
+      fontSize: '{huyooo.text.lg.fontSize}',
+      lineHeight: '{huyooo.text.lg.lineHeight}',
       fontWeight: '{huyooo.fontWeight.semibold}',
       color: '{elements.text.primary.color.static}'
     },
     '.description': {
-      fontSize: '{text.sm.fontSize}',
-      lineHeight: '{text.sm.lineHeight}',
+      fontSize: '{huyooo.text.sm.fontSize}',
+      lineHeight: '{huyooo.text.sm.lineHeight}',
       fontWeight: '{huyooo.fontWeight.medium}',
       color: '{elements.text.secondary.color.static}'
     }

@@ -61,7 +61,7 @@ css({
     alignItems: 'flex-start',
     my: '{huyooo.space.4}',
     h4: {
-      fontSize: '{fontSize.2xl}',
+      fontSize: '{huyooo.fontSize.2xl}',
       fontWeight: '{huyooo.fontWeight.black}',
       lineHeight: '1',
       my: '{huyooo.space.4}',

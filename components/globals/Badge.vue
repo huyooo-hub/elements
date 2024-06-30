@@ -28,9 +28,9 @@ css({
     alignItems: 'center',
     px: '{huyooo.space.3}',
     py: '{huyooo.space.1}',
-    fontSize: '{text.base.fontSize}',
-    lineHeight: '{text.base.lineHeight}',
-    letterSpacing: '{letterSpacing.tight}',
+    fontSize: '{huyooo.text.base.fontSize}',
+    lineHeight: '{huyooo.text.base.lineHeight}',
+    letterSpacing: '{huyooo.letterSpacing.tight}',
     borderRadius: '{huyooo.radii.full}',
     border: '1px solid',
 

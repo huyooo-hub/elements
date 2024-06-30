@@ -30,8 +30,8 @@ css({
     borderRadius: '{huyooo.radii.md}',
     px: '{huyooo.space.4}',
     py: '{huyooo.space.3}',
-    fontSize: '{text.sm.fontSize}',
-    lineHeight: '{text.sm.lineHeight}',
+    fontSize: '{huyooo.text.sm.fontSize}',
+    lineHeight: '{huyooo.text.sm.lineHeight}',
     border: '1px solid',
     '&.primary': {
       stateColors: 'primary'

@@ -61,23 +61,23 @@ css({
     size: {
       small: {
         padding: `{huyooo.space.2} {huyooo.space.4}`,
-        fontSize: '{text.sm.fontSize}',
-        lineHeight: '{text.sm.lineHeight}',
+        fontSize: '{huyooo.text.sm.fontSize}',
+        lineHeight: '{huyooo.text.sm.lineHeight}',
       },
       medium: {
         padding: `{huyooo.space.rem.625} {huyooo.space.5}`,
-        fontSize: '{text.base.fontSize}',
-        lineHeight: '{text.base.lineHeight}',
+        fontSize: '{huyooo.text.base.fontSize}',
+        lineHeight: '{huyooo.text.base.lineHeight}',
       },
       large: {
         padding: `{huyooo.space.3} {huyooo.space.6}`,
-        fontSize: '{text.lg.fontSize}',
-        lineHeight: '{text.lg.lineHeight}',
+        fontSize: '{huyooo.text.lg.fontSize}',
+        lineHeight: '{huyooo.text.lg.lineHeight}',
       },
       giant: {
         padding: `{huyooo.space.4} {huyooo.space.8}`,
-        fontSize: '{text.lg.fontSize}',
-        lineHeight: '{text.lg.lineHeight}',
+        fontSize: '{huyooo.text.lg.fontSize}',
+        lineHeight: '{huyooo.text.lg.lineHeight}',
       },
       options: {
         default: 'medium'

@@ -35,14 +35,14 @@ css({
     },
     '.title': {
       marginBottom: '{huyooo.space.8}',
-      fontSize: '{text.3xl.fontSize}',
-      lineHeight: '{text.3xl.lineHeight}',
+      fontSize: '{huyooo.text.3xl.fontSize}',
+      lineHeight: '{huyooo.text.3xl.lineHeight}',
       fontWeight: '{huyooo.fontWeight.bold}',
-      letterSpacing: '{letterSpacing.tight}',
+      letterSpacing: '{huyooo.letterSpacing.tight}',
       color: '{elements.text.primary.color.static}',
       '@sm': {
-        fontSize: '{text.4xl.fontSize}',
-        lineHeight: '{text.4xl.lineHeight}',
+        fontSize: '{huyooo.text.4xl.fontSize}',
+        lineHeight: '{huyooo.text.4xl.lineHeight}',
       }
     },
     '.layout': {

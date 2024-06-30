@@ -54,8 +54,8 @@ css({
     px: '{huyooo.space.4}',
     py: '{huyooo.space.3}',
     my: '{huyooo.space.8}',
-    fontSize: '{text.sm.fontSize}',
-    lineHeight: '{text.sm.lineHeight}',
+    fontSize: '{huyooo.text.sm.fontSize}',
+    lineHeight: '{huyooo.text.sm.lineHeight}',
     borderRadius: '{huyooo.radii.md}',
     border: '1px solid',
 

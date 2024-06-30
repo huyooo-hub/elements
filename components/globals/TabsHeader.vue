@@ -93,9 +93,9 @@ css({
         px: '{huyooo.space.4}',
         position: 'relative',
         fontFamily: '{huyooo.font.mono}',
-        fontSize: '{text.sm.fontSize}',
-        lineHeight: '{text.sm.lineHeight}',
-        letterSpacing: '{letterSpacing.tight}',
+        fontSize: '{huyooo.text.sm.fontSize}',
+        lineHeight: '{huyooo.text.sm.lineHeight}',
+        letterSpacing: '{huyooo.letterSpacing.tight}',
         userSelect: 'none',
         transition: 'color 100ms, background 100ms',
         '&.not-active': {
