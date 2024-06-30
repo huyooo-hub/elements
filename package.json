@@ -20,7 +20,7 @@
         "release": "release-it"
     },
     "dependencies": {
-        "@nuxt-themes/tokens": "^1.9.1",
+        "@huyooo-hub/tokens": "^2.1.2",
         "@vueuse/core": "^9.13.0"
     },
     "devDependencies": {

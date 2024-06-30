@@ -1,11 +1,11 @@
-import { createResolver } from '@nuxt/kit'
+import { createResolver } from '@nuxt/kit';
 
-const { resolve } = createResolver(import.meta.url)
+const { resolve } = createResolver(import.meta.url);
 
 // That allows to overwrite these dependencies paths via `.env` for local development
 const envModules = {
-  tokens: process?.env?.THEME_DEV_TOKENS_PATH || '@nuxt-themes/tokens'
-}
+  tokens: process?.env?.THEME_DEV_TOKENS_PATH || '@huyooo-hub/tokens',
+};
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -16,6 +16,6 @@ export default defineNuxtConfig({
     { path: resolve('components/icons'), global: true, prefix: '' },
     { path: resolve('components/landing'), global: true, prefix: '' },
     { path: resolve('components/volta'), global: true, prefix: '' },
-    { path: resolve('components/meta'), global: true, prefix: '' }
-  ]
-})
+    { path: resolve('components/meta'), global: true, prefix: '' },
+  ],
+});
