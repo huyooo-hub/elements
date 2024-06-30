@@ -15,7 +15,7 @@ const src = computed(() => `https://volta.net/embed/${props.token}`);
 <style lang="ts">
 css({
   iframe: {
-    width: '{size.full}',
+    width: '{huyooo.size.full}',
     minHeight: 'calc(100vh/1.5)',
     borderRadius: '{huyooo.radii.md}',
     stateColors: 'primary'

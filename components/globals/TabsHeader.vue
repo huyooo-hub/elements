@@ -92,7 +92,7 @@ css({
         py: '{huyooo.space.rem.625}',
         px: '{huyooo.space.4}',
         position: 'relative',
-        fontFamily: '{font.mono}',
+        fontFamily: '{huyooo.font.mono}',
         fontSize: '{text.sm.fontSize}',
         lineHeight: '{text.sm.lineHeight}',
         letterSpacing: '{letterSpacing.tight}',

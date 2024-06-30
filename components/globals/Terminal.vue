@@ -146,7 +146,7 @@ css({
         alignItems: 'center',
         justifyContent: 'center',
         fontWeight: '{fontWeight.semibold}',
-        fontFamily: '{font.mono}'
+        fontFamily: '{huyooo.font.mono}'
       }
     },
     '.window': {
@@ -154,7 +154,7 @@ css({
       flexDirection: 'column',
       flex: '1 1 0%',
       padding: '{huyooo.space.4}',
-      fontFamily: '{font.mono}',
+      fontFamily: '{huyooo.font.mono}',
       fontSize: '{text.sm.fontSize}',
       '.line': {
         display: 'flex',
