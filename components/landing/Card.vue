@@ -45,13 +45,13 @@ css({
       marginBottom: '{huyooo.space.2}',
       fontSize: '{text.lg.fontSize}',
       lineHeight: '{text.lg.lineHeight}',
-      fontWeight: '{fontWeight.semibold}',
+      fontWeight: '{huyooo.fontWeight.semibold}',
       color: '{elements.text.primary.color.static}'
     },
     '.description': {
       fontSize: '{text.sm.fontSize}',
       lineHeight: '{text.sm.lineHeight}',
-      fontWeight: '{fontWeight.medium}',
+      fontWeight: '{huyooo.fontWeight.medium}',
       color: '{elements.text.secondary.color.static}'
     }
   }

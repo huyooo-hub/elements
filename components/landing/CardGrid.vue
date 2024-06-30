@@ -37,7 +37,7 @@ css({
       marginBottom: '{huyooo.space.8}',
       fontSize: '{text.3xl.fontSize}',
       lineHeight: '{text.3xl.lineHeight}',
-      fontWeight: '{fontWeight.bold}',
+      fontWeight: '{huyooo.fontWeight.bold}',
       letterSpacing: '{letterSpacing.tight}',
       color: '{elements.text.primary.color.static}',
       '@sm': {

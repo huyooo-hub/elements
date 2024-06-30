@@ -62,7 +62,7 @@ css({
     my: '{huyooo.space.4}',
     h4: {
       fontSize: '{fontSize.2xl}',
-      fontWeight: '{fontWeight.black}',
+      fontWeight: '{huyooo.fontWeight.black}',
       lineHeight: '1',
       my: '{huyooo.space.4}',
       '@mq.md': {

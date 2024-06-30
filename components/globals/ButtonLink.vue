@@ -43,7 +43,7 @@ css({
     alignItems: 'center',
     borderRadius: '{huyooo.radii.md}',
     transition: 'color 100ms ease-in-out',
-    fontWeight: '{fontWeight.bold}',
+    fontWeight: '{huyooo.fontWeight.bold}',
     color: '{huyooo.color.white}',
     backgroundColor: '{button.primary}',
     border: '1px solid transparent',

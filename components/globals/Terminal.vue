@@ -98,7 +98,7 @@ css({
       },
       '.content': {
         zIndex: 10,
-        fontWeight: '{fontWeight.semibold}',
+        fontWeight: '{huyooo.fontWeight.semibold}',
         color: '{huyooo.color.gray.100}',
         fontSize: '{fontSize.lg}'
       }
@@ -145,7 +145,7 @@ css({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        fontWeight: '{fontWeight.semibold}',
+        fontWeight: '{huyooo.fontWeight.semibold}',
         fontFamily: '{huyooo.font.mono}'
       }
     },
@@ -164,7 +164,7 @@ css({
         marginInlineEnd: '{huyooo.space.2}',
         display: 'inline-block',
         userSelect: 'none',
-        fontWeight: '{fontWeight.bold}'
+        fontWeight: '{huyooo.fontWeight.bold}'
       },
       '.content': {
         display: 'inline-block',
@@ -173,7 +173,7 @@ css({
     '.prompt': {
       paddingTop: '{huyooo.space.2}',
       paddingBottom: '{huyooo.space.2}',
-      fontWeight: '{fontWeight.semibold}',
+      fontWeight: '{huyooo.fontWeight.semibold}',
       textAlign: 'center',
       opacity: 0,
     },

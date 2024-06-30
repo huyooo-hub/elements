@@ -107,7 +107,7 @@ css({
       },
       '.title': {
         color: '{elements.text.primary.color.static}',
-        fontWeight: '{fontWeight.bold}',
+        fontWeight: '{huyooo.fontWeight.bold}',
         letterSpacing: '{letterSpacing.tight}',
         textAlign: 'center',
         fontSize: '{text.4xl.fontSize}',
@@ -161,7 +161,7 @@ css({
           marginBottom: 0
         },
         '.secondary': {
-          fontWeight: '{fontWeight.medium}',
+          fontWeight: '{huyooo.fontWeight.medium}',
           color: '{elements.text.secondary.color.static}',
           '&:hover': {
             color: '{elements.text.secondary.color.hover}'
