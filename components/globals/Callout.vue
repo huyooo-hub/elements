@@ -56,7 +56,7 @@ css({
     my: '{huyooo.space.8}',
     fontSize: '{text.sm.fontSize}',
     lineHeight: '{text.sm.lineHeight}',
-    borderRadius: '{radii.md}',
+    borderRadius: '{huyooo.radii.md}',
     border: '1px solid',
 
     '&.primary': {

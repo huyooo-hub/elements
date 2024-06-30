@@ -27,7 +27,7 @@ const props = defineProps({
 css({
   '.alert': {
     my: '{huyooo.space.8}',
-    borderRadius: '{radii.md}',
+    borderRadius: '{huyooo.radii.md}',
     px: '{huyooo.space.4}',
     py: '{huyooo.space.3}',
     fontSize: '{text.sm.fontSize}',

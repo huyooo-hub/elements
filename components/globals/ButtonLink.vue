@@ -41,7 +41,7 @@ css({
     display: 'inline-flex',
     flex: 'none',
     alignItems: 'center',
-    borderRadius: '{radii.md}',
+    borderRadius: '{huyooo.radii.md}',
     transition: 'color 100ms ease-in-out',
     fontWeight: '{fontWeight.bold}',
     color: '{huyooo.color.white}',

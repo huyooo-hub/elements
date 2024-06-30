@@ -86,7 +86,7 @@ export default defineComponent({
 css({
   '.code-group': {
     border: '1px solid {elements.border.secondary.static}',
-    borderRadius: '{radii.md}',
+    borderRadius: '{huyooo.radii.md}',
     overflow: 'hidden',
     ':deep(.prose-code)': {
       margin: 0,

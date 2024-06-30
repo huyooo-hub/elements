@@ -72,7 +72,7 @@ css({
     cursor: 'pointer',
     overflow: 'hidden',
     border: '1px solid {elements.border.secondary.static}',
-    borderRadius: '{radii.lg}',
+    borderRadius: '{huyooo.radii.lg}',
     background: '{elements.surface.background.base}',
     '.copied': {
       position: 'absolute',
@@ -117,20 +117,20 @@ css({
           '&:nth-child(1)': {
             width: '{huyooo.space.3}',
             height: '{huyooo.space.3}',
-            borderRadius: '{radii.full}',
+            borderRadius: '{huyooo.radii.full}',
             background: '{huyooo.color.red.400}'
           },
           '&:nth-child(2)': {
             width: '{huyooo.space.3}',
             height: '{huyooo.space.3}',
-            borderRadius: '{radii.full}',
+            borderRadius: '{huyooo.radii.full}',
             background: '{color.yellow.400}',
             marginInlineStart: '{huyooo.space.2}'
           },
           '&:nth-child(3)': {
             width: '{huyooo.space.3}',
             height: '{huyooo.space.3}',
-            borderRadius: '{radii.full}',
+            borderRadius: '{huyooo.radii.full}',
             background: '{color.green.400}',
             marginInlineStart: '{huyooo.space.2}'
           },

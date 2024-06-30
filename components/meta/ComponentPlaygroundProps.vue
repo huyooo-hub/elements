@@ -82,7 +82,7 @@ css({
   input: {
     px: '{huyooo.space.2}',
     py: '{huyooo.space.1}',
-    borderRadius: '{radii.sm}',
+    borderRadius: '{huyooo.radii.sm}',
     border: '1px solid {huyooo.color.gray.200}',
     '@dark': {
       border: '1px solid {huyooo.color.gray.800}',

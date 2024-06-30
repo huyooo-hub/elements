@@ -31,7 +31,7 @@ css({
     fontSize: '{text.base.fontSize}',
     lineHeight: '{text.base.lineHeight}',
     letterSpacing: '{letterSpacing.tight}',
-    borderRadius: '{radii.full}',
+    borderRadius: '{huyooo.radii.full}',
     border: '1px solid',
 
     '&.primary': {

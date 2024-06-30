@@ -90,7 +90,7 @@ css({
     my: '{huyooo.space.8}',
     overflow: 'hidden',
     background: '{huyooo.color.gray.900}',
-    borderRadius: '{radii.lg}',
+    borderRadius: '{huyooo.radii.lg}',
     '.loaded': {
       position: 'absolute',
       top: 0,

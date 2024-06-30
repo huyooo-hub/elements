@@ -89,7 +89,7 @@ export default defineComponent({
 css({
   '.component-playground': {
     border: '1px solid {huyooo.color.gray.200}',
-    borderRadius: '{radii.lg}',
+    borderRadius: '{huyooo.radii.lg}',
     overflow: 'hidden',
 
     '@dark': {
