@@ -1,53 +1,55 @@
 <script setup lang="ts">
-import { nextTick, ref, watch } from 'vue'
-import type { PropType } from 'vue'
+import { nextTick, ref, watch } from 'vue';
+import type { PropType } from 'vue';
 
 const props = defineProps({
   tabs: {
     type: Array as PropType<{ label: string }[]>,
-    required: true
+    required: true,
   },
   activeTabIndex: {
     type: Number,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
-const emit = defineEmits(['update:activeTabIndex'])
+const emit = defineEmits(['update:activeTabIndex']);
 
-const tabsRef = ref()
+const tabsRef = ref();
 
-const highlightUnderline = ref()
+const highlightUnderline = ref();
 
 const updateHighlightUnderlinePosition = (activeTab: any) => {
   if (!activeTab) {
-    return
+    return;
   }
 
-  highlightUnderline.value.style.insetInlineStart = `${activeTab.offsetLeft}px`
-  highlightUnderline.value.style.width = `${activeTab.clientWidth}px`
-}
+  highlightUnderline.value.style.insetInlineStart = `${activeTab.offsetLeft}px`;
+  highlightUnderline.value.style.width = `${activeTab.clientWidth}px`;
+};
 
 const updateTabs = ($event: any, i: any) => {
-  emit('update:activeTabIndex', i)
-  nextTick(() => updateHighlightUnderlinePosition($event.target))
-}
+  emit('update:activeTabIndex', i);
+  nextTick(() => updateHighlightUnderlinePosition($event.target));
+};
 
 watch(
   tabsRef,
   (newVal) => {
     if (!newVal) {
-      return
+      return;
     }
 
     setTimeout(() => {
-      updateHighlightUnderlinePosition(tabsRef.value.children[props.activeTabIndex])
-    }, 50)
+      updateHighlightUnderlinePosition(
+        tabsRef.value.children[props.activeTabIndex]
+      );
+    }, 50);
   },
   {
-    immediate: true
+    immediate: true,
   }
-)
+);
 </script>
 
 <template>
@@ -61,10 +63,7 @@ watch(
       >
         {{ label }}
       </button>
-      <span
-        ref="highlightUnderline"
-        class="highlight-underline"
-      >
+      <span ref="highlightUnderline" class="highlight-underline">
         <span class="tab" />
       </span>
     </div>
@@ -87,11 +86,11 @@ css({
       position: 'relative',
       zIndex: 0,
       display: 'flex',
-      px: '{space.2}',
+      px: '{huyooo.space.2}',
       overflowX: 'auto',
       button: {
-        py: '{space.rem.625}',
-        px: '{space.4}',
+        py: '{huyooo.space.rem.625}',
+        px: '{huyooo.space.4}',
         position: 'relative',
         fontFamily: '{font.mono}',
         fontSize: '{text.sm.fontSize}',

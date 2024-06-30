@@ -1,29 +1,33 @@
 <script setup lang="ts">
-import { PinceauTheme } from 'pinceau'
-import { computedStyle } from 'pinceau/runtime'
+import { PinceauTheme } from 'pinceau';
+import { computedStyle } from 'pinceau/runtime';
 
 defineProps({
   blank: {
     type: Boolean,
     required: false,
-    default: false
+    default: false,
   },
   color: computedStyle<keyof PinceauTheme['color']>('primary'),
   href: {
     type: String,
     required: true,
-    default: ''
+    default: '',
   },
   icon: {
     type: String,
-    default: ''
+    default: '',
   },
-  ...variants
-})
+  ...variants,
+});
 </script>
 
 <template>
-  <NuxtLink class="button-link" :to="href" :target="blank ? '_blank' : undefined">
+  <NuxtLink
+    class="button-link"
+    :to="href"
+    :target="blank ? '_blank' : undefined"
+  >
     <Icon v-if="icon" :name="icon" />
     <ContentSlot :use="$slots.default" unwrap="p ul li" />
   </NuxtLink>
@@ -50,28 +54,28 @@ css({
       border: `1px solid {button.primary}`
     },
     '.icon': {
-      marginInlineEnd: '{space.1}'
+      marginInlineEnd: '{huyooo.space.1}'
     }
   },
   variants: {
     size: {
       small: {
-        padding: `{space.2} {space.4}`,
+        padding: `{huyooo.space.2} {huyooo.space.4}`,
         fontSize: '{text.sm.fontSize}',
         lineHeight: '{text.sm.lineHeight}',
       },
       medium: {
-        padding: `{space.rem.625} {space.5}`,
+        padding: `{huyooo.space.rem.625} {huyooo.space.5}`,
         fontSize: '{text.base.fontSize}',
         lineHeight: '{text.base.lineHeight}',
       },
       large: {
-        padding: `{space.3} {space.6}`,
+        padding: `{huyooo.space.3} {huyooo.space.6}`,
         fontSize: '{text.lg.fontSize}',
         lineHeight: '{text.lg.lineHeight}',
       },
       giant: {
-        padding: `{space.4} {space.8}`,
+        padding: `{huyooo.space.4} {huyooo.space.8}`,
         fontSize: '{text.lg.fontSize}',
         lineHeight: '{text.lg.lineHeight}',
       },

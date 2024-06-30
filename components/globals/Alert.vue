@@ -6,11 +6,13 @@ const props = defineProps({
   type: {
     type: String,
     default: 'info',
-    validator (value: string) {
-      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)
-    }
-  }
-})
+    validator(value: string) {
+      return ['info', 'success', 'warning', 'danger', 'primary'].includes(
+        value
+      );
+    },
+  },
+});
 </script>
 
 <template>
@@ -24,10 +26,10 @@ const props = defineProps({
 <style scoped lang="ts">
 css({
   '.alert': {
-    my: '{space.8}',
+    my: '{huyooo.space.8}',
     borderRadius: '{radii.md}',
-    px: '{space.4}',
-    py: '{space.3}',
+    px: '{huyooo.space.4}',
+    py: '{huyooo.space.3}',
     fontSize: '{text.sm.fontSize}',
     lineHeight: '{text.sm.lineHeight}',
     border: '1px solid',

@@ -6,11 +6,13 @@ defineProps({
   type: {
     type: String,
     default: 'info',
-    validator (value: string) {
-      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)
-    }
-  }
-})
+    validator(value: string) {
+      return ['info', 'success', 'warning', 'danger', 'primary'].includes(
+        value
+      );
+    },
+  },
+});
 </script>
 
 <template>
@@ -24,8 +26,8 @@ css({
   '.badge': {
     display: 'inline-flex',
     alignItems: 'center',
-    px: '{space.3}',
-    py: '{space.1}',
+    px: '{huyooo.space.3}',
+    py: '{huyooo.space.1}',
     fontSize: '{text.base.fontSize}',
     lineHeight: '{text.base.lineHeight}',
     letterSpacing: '{letterSpacing.tight}',

@@ -2,9 +2,9 @@
 defineProps({
   icon: {
     type: String,
-    default: ''
-  }
-})
+    default: '',
+  },
+});
 </script>
 
 <template>
@@ -13,9 +13,7 @@ defineProps({
     <slot />
     <div>
       <h3 class="title">
-        <ContentSlot :use="$slots.title" unwrap="p">
-          Card title
-        </ContentSlot>
+        <ContentSlot :use="$slots.title" unwrap="p"> Card title </ContentSlot>
       </h3>
       <p class="description">
         <ContentSlot :use="$slots.description" unwrap="p">
@@ -32,19 +30,19 @@ css({
     display: 'block',
     position: 'relative',
     width: '100%',
-    padding: '{space.8}',
+    padding: '{huyooo.space.8}',
     borderRadius: '{radii.xl}',
     border: '1px solid {elements.border.primary.static}',
     background: '{elements.backdrop.background}',
     backdropFilter: '{elements.backdrop.filter}',
     '.icon': {
       display: 'inline-block',
-      marginBottom: '{space.2}',
-      width: '{space.6}',
-      height: '{space.6}'
+      marginBottom: '{huyooo.space.2}',
+      width: '{huyooo.space.6}',
+      height: '{huyooo.space.6}'
     },
     '.title': {
-      marginBottom: '{space.2}',
+      marginBottom: '{huyooo.space.2}',
       fontSize: '{text.lg.fontSize}',
       lineHeight: '{text.lg.lineHeight}',
       fontWeight: '{fontWeight.semibold}',

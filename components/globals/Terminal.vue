@@ -1,45 +1,45 @@
 <script setup lang="ts">
-import { PropType } from 'vue'
-import { useClipboard } from '@vueuse/core'
+import { PropType } from 'vue';
+import { useClipboard } from '@vueuse/core';
 
 const props = defineProps({
   content: {
     type: [Array, String] as PropType<string[] | string>,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
-const { copy: copyToClipboard } = useClipboard()
+const { copy: copyToClipboard } = useClipboard();
 
-const state = ref('init')
+const state = ref('init');
 
 const lines = computed(() => {
-  if (typeof props.content === 'string') { return [props.content] }
-  return props.content
-})
+  if (typeof props.content === 'string') {
+    return [props.content];
+  }
+  return props.content;
+});
 
 const copy = (e: MouseEvent) => {
   copyToClipboard(lines.value.join('\n'))
     .then(() => {
-      state.value = 'copied'
+      state.value = 'copied';
 
       setTimeout(() => {
-        state.value = 'init'
-      }, 1000)
+        state.value = 'init';
+      }, 1000);
     })
     .catch(() => {
-      console.warn("Couldn't copy to clipboard!")
-    })
-}
+      console.warn("Couldn't copy to clipboard!");
+    });
+};
 </script>
 
 <template>
   <div class="terminal" @click="copy">
     <div v-if="state === 'copied'" class="copied">
       <div class="scrim" />
-      <div class="content">
-        Copied!
-      </div>
+      <div class="content">Copied!</div>
     </div>
     <div class="header">
       <div class="controls">
@@ -47,9 +47,7 @@ const copy = (e: MouseEvent) => {
         <div />
         <div />
       </div>
-      <div class="title">
-        Bash
-      </div>
+      <div class="title">Bash</div>
     </div>
     <div class="window">
       <span v-for="line in lines" :key="line" class="line">
@@ -57,9 +55,7 @@ const copy = (e: MouseEvent) => {
         <span class="content">{{ line }}</span>
       </span>
     </div>
-    <div v-if="state !== 'copied'" class="prompt">
-      Click to copy
-    </div>
+    <div v-if="state !== 'copied'" class="prompt">Click to copy</div>
   </div>
 </template>
 
@@ -70,8 +66,8 @@ css({
     display: 'flex',
     flexDirection: 'column',
     width: '100%',
-    maxWidth: '{space.128}',
-    height: '{space.64}',
+    maxWidth: '{huyooo.space.128}',
+    height: '{huyooo.space.64}',
     mx: 'auto',
     cursor: 'pointer',
     overflow: 'hidden',
@@ -113,30 +109,30 @@ css({
       alignItems: 'center',
       borderBottom: '1px solid {elements.border.secondary.static}',
       width: '100%',
-      height: '{space.12}',
+      height: '{huyooo.space.12}',
       '.controls': {
         display: 'flex',
-        marginInlineStart: '{space.4}',
+        marginInlineStart: '{huyooo.space.4}',
         div: {
           '&:nth-child(1)': {
-            width: '{space.3}',
-            height: '{space.3}',
+            width: '{huyooo.space.3}',
+            height: '{huyooo.space.3}',
             borderRadius: '{radii.full}',
             background: '{color.red.400}'
           },
           '&:nth-child(2)': {
-            width: '{space.3}',
-            height: '{space.3}',
+            width: '{huyooo.space.3}',
+            height: '{huyooo.space.3}',
             borderRadius: '{radii.full}',
             background: '{color.yellow.400}',
-            marginInlineStart: '{space.2}'
+            marginInlineStart: '{huyooo.space.2}'
           },
           '&:nth-child(3)': {
-            width: '{space.3}',
-            height: '{space.3}',
+            width: '{huyooo.space.3}',
+            height: '{huyooo.space.3}',
             borderRadius: '{radii.full}',
             background: '{color.green.400}',
-            marginInlineStart: '{space.2}'
+            marginInlineStart: '{huyooo.space.2}'
           },
         }
       },
@@ -157,15 +153,15 @@ css({
       display: 'flex',
       flexDirection: 'column',
       flex: '1 1 0%',
-      padding: '{space.4}',
+      padding: '{huyooo.space.4}',
       fontFamily: '{font.mono}',
       fontSize: '{text.sm.fontSize}',
       '.line': {
         display: 'flex',
-        marginBottom: '{space.1}',
+        marginBottom: '{huyooo.space.1}',
       },
       '.sign': {
-        marginInlineEnd: '{space.2}',
+        marginInlineEnd: '{huyooo.space.2}',
         display: 'inline-block',
         userSelect: 'none',
         fontWeight: '{fontWeight.bold}'
@@ -175,8 +171,8 @@ css({
       }
     },
     '.prompt': {
-      paddingTop: '{space.2}',
-      paddingBottom: '{space.2}',
+      paddingTop: '{huyooo.space.2}',
+      paddingBottom: '{huyooo.space.2}',
       fontWeight: '{fontWeight.semibold}',
       textAlign: 'center',
       opacity: 0,

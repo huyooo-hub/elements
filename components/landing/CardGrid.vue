@@ -2,9 +2,9 @@
 defineProps({
   title: {
     type: String,
-    default: 'Features'
-  }
-})
+    default: 'Features',
+  },
+});
 </script>
 
 <template>
@@ -26,15 +26,15 @@ defineProps({
 css({
   '.card-grid': {
     position: 'relative',
-    paddingBottom: '{space.20}',
+    paddingBottom: '{huyooo.space.20}',
     '@sm': {
-      paddingBottom: '{space.24}',
+      paddingBottom: '{huyooo.space.24}',
     },
     '@lg': {
-      paddingBottom: '{space.32}',
+      paddingBottom: '{huyooo.space.32}',
     },
     '.title': {
-      marginBottom: '{space.8}',
+      marginBottom: '{huyooo.space.8}',
       fontSize: '{text.3xl.fontSize}',
       lineHeight: '{text.3xl.lineHeight}',
       fontWeight: '{fontWeight.bold}',
@@ -47,7 +47,7 @@ css({
     },
     '.layout': {
       display: 'grid',
-      gap: '{space.4}',
+      gap: '{huyooo.space.4}',
       textAlign: 'start',
       '@sm': {
         gridTemplateColumns: 'repeat(2, minmax(0, 1fr))'
@@ -56,7 +56,7 @@ css({
         gridTemplateColumns: 'repeat(3, minmax(0, 1fr))'
       },
       '@2xl': {
-        gap: '{space.8}'
+        gap: '{huyooo.space.8}'
       }
     }
   }

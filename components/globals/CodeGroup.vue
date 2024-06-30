@@ -1,51 +1,50 @@
 <script lang="ts">
-import TabsHeader from './TabsHeader.vue'
+import TabsHeader from './TabsHeader.vue';
 
 const isTag = (slot: any, tag: string) => {
-  return slot.type && slot.type.tag && slot.type.tag === tag
-}
+  return slot.type && slot.type.tag && slot.type.tag === tag;
+};
 
 export default defineComponent({
-  data () {
+  data() {
     return {
       activeTabIndex: 0,
       /**
        * A simple number that increases on every changes
        */
-      counter: 0
-    }
+      counter: 0,
+    };
   },
-  render () {
-    const slots = this.$slots?.default?.() || []
-    const tabs = slots
-      .map((slot, index) => {
-        return {
-          label: slot?.props?.filename || slot?.props?.label || `${index}`,
-          active: slot?.props?.active || false,
-          component: slot
-        }
-      })
+  render() {
+    const slots = this.$slots?.default?.() || [];
+    const tabs = slots.map((slot, index) => {
+      return {
+        label: slot?.props?.filename || slot?.props?.label || `${index}`,
+        active: slot?.props?.active || false,
+        component: slot,
+      };
+    });
 
     return h(
       'div',
       {
         class: {
           'code-group': true,
-          'first-tab': this.activeTabIndex === 0
-        }
+          'first-tab': this.activeTabIndex === 0,
+        },
       },
       [
         h(TabsHeader, {
           ref: 'tabs-header',
           activeTabIndex: this.activeTabIndex,
           tabs,
-          'onUpdate:activeTabIndex': $event => (this.activeTabIndex = $event)
+          'onUpdate:activeTabIndex': ($event) => (this.activeTabIndex = $event),
         }),
         h(
           'div',
           {
             class: 'code-group-content',
-            text: this.activeTabIndex
+            text: this.activeTabIndex,
           },
           // Map slots to content children
           slots.map((slot, index) =>
@@ -54,33 +53,33 @@ export default defineComponent({
               {
                 // Current slot is displayed, others are hidden
                 style: {
-                  display: index === this.activeTabIndex ? 'block' : 'none'
+                  display: index === this.activeTabIndex ? 'block' : 'none',
                 },
                 class: {
-                  '': !isTag(slot, 'code') && !isTag(slot, 'pre')
-                }
+                  '': !isTag(slot, 'code') && !isTag(slot, 'pre'),
+                },
               },
               // Display direct children if not a ```code``` block
               [
                 isTag(slot, 'code') || isTag(slot, 'pre')
                   ? slot
                   : h(
-                    'div',
-                    {
-                      class: {
-                        'preview-canvas': true
-                      }
-                    },
-                    [(slot.children as any)?.default?.() || slot.children]
-                  )
+                      'div',
+                      {
+                        class: {
+                          'preview-canvas': true,
+                        },
+                      },
+                      [(slot.children as any)?.default?.() || slot.children]
+                    ),
               ]
             )
           )
-        )
+        ),
       ]
-    )
-  }
-})
+    );
+  },
+});
 </script>
 
 <style scoped lang="ts">
@@ -98,7 +97,7 @@ css({
       display: 'none'
     },
     '.preview-canvas': {
-      padding: '{space.4}',
+      padding: '{huyooo.space.4}',
       '&:has(.sandbox)': {
         padding: 0,
         ':deep(.sandbox)': {

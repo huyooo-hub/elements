@@ -1,28 +1,28 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
+import type { PropType } from 'vue';
 
 defineProps({
   cta: {
     type: Array as PropType<string[]>,
     required: false,
-    default: () => []
+    default: () => [],
   },
   secondary: {
     type: Array as PropType<string[]>,
     required: false,
-    default: () => []
+    default: () => [],
   },
   video: {
     type: String,
     required: false,
-    default: ''
+    default: '',
   },
   snippet: {
     type: [Array, String] as PropType<string[] | string>,
     required: false,
-    default: ''
-  }
-})
+    default: '',
+  },
+});
 </script>
 
 <template>
@@ -34,9 +34,7 @@ defineProps({
         </p>
 
         <h1 class="title">
-          <ContentSlot :use="$slots.title" unwrap="p">
-            Hero Title
-          </ContentSlot>
+          <ContentSlot :use="$slots.title" unwrap="p"> Hero Title </ContentSlot>
         </h1>
 
         <p class="description">
@@ -52,7 +50,13 @@ defineProps({
         <div class="actions">
           <ContentSlot v-if="$slots.actions" :use="$slots.actions" unwrap="p" />
           <template v-else>
-            <ButtonLink v-if="cta" class="cta" bold size="medium" :href="(cta[1] as any)">
+            <ButtonLink
+              v-if="cta"
+              class="cta"
+              bold
+              size="medium"
+              :href="(cta[1] as any)"
+            >
               {{ cta[0] }}
             </ButtonLink>
             <a v-if="secondary" :href="(secondary[1] as any)" class="secondary">
@@ -75,18 +79,18 @@ defineProps({
 <style scoped lang="ts">
 css({
   '.block-hero': {
-    padding: '{space.20} 0',
+    padding: '{huyooo.space.20} 0',
     '@sm': {
-      padding: '{space.24} 0',
+      padding: '{huyooo.space.24} 0',
     },
     '@lg': {
-      padding: '{space.32} 0',
+      padding: '{huyooo.space.32} 0',
     },
     '.layout': {
       display: 'grid',
-      gap: '{space.16}',
+      gap: '{huyooo.space.16}',
       '@lg': {
-        gap: '{space.8}',
+        gap: '{huyooo.space.8}',
         gridTemplateColumns: 'repeat(3, minmax(0, 1fr))'
       }
     },
@@ -95,7 +99,7 @@ css({
         gridColumn: 'span 2 / span 2'
       },
       '.announce': {
-        marginBottom: '{space.2}',
+        marginBottom: '{huyooo.space.2}',
         textAlign: 'center',
         '@lg': {
           textAlign: 'start'
@@ -108,32 +112,32 @@ css({
         textAlign: 'center',
         fontSize: '{text.4xl.fontSize}',
         lineHeight: '{text.4xl.lineHeight}',
-        marginBottom: '{space.8}',
-        px: '{space.8}',
+        marginBottom: '{huyooo.space.8}',
+        px: '{huyooo.space.8}',
         '@sm': {
           fontSize: '{text.5xl.fontSize}',
           lineHeight: '{text.5xl.lineHeight}',
         },
         '@lg': {
-          px: '{space.0}',
+          px: '{huyooo.space.0}',
           fontSize: '{text.6xl.fontSize}',
           lineHeight: '{text.6xl.lineHeight}',
           textAlign: 'start'
         }
       },
       '.description': {
-        marginBottom: '{space.12}',
+        marginBottom: '{huyooo.space.12}',
         fontSize: '{text.lg.fontSize}',
         lineHeight: '{text.lg.lineHeight}',
         textAlign: 'center',
         color: '{elements.text.secondary.color.static}',
-        px: '{space.2}',
+        px: '{huyooo.space.2}',
         '@lg': {
           textAlign: 'start'
         }
       },
       '.extra': {
-        marginBottom: '{space.16}',
+        marginBottom: '{huyooo.space.16}',
         display: 'flex',
         justifyContent: 'center',
         '@lg': {
@@ -145,10 +149,10 @@ css({
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        gap: '{space.4}',
+        gap: '{huyooo.space.4}',
         '@sm': {
           flexDirection: 'row',
-          gap: '{space.6}'
+          gap: '{huyooo.space.6}'
         },
         '@lg': {
           justifyContent: 'flex-start'

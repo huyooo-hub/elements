@@ -4,8 +4,8 @@ const iconTypeMap = {
   info: 'heroicons-outline:information-circle',
   success: 'heroicons-outline:check-circle',
   warning: 'heroicons-outline:exclamation',
-  danger: 'heroicons-outline:exclamation-circle'
-}
+  danger: 'heroicons-outline:exclamation-circle',
+};
 
 export default defineComponent({
   props: {
@@ -15,7 +15,7 @@ export default defineComponent({
      */
     icon: {
       type: String,
-      default: null
+      default: null,
     },
     /**
      * Type of list
@@ -23,46 +23,58 @@ export default defineComponent({
     type: {
       type: String,
       default: 'primary',
-      validator: (value: string) => ['primary', 'info', 'success', 'warning', 'danger'].includes(value)
-    }
+      validator: (value: string) =>
+        ['primary', 'info', 'success', 'warning', 'danger'].includes(value),
+    },
   },
-  setup (props) {
-    const slots = useSlots()
+  setup(props) {
+    const slots = useSlots();
 
-    const { flatUnwrap, unwrap } = useUnwrap()
+    const { flatUnwrap, unwrap } = useUnwrap();
 
-    const iconName = computed(() => props.icon || (iconTypeMap as any)[props.type])
+    const iconName = computed(
+      () => props.icon || (iconTypeMap as any)[props.type]
+    );
 
     // Usage of render function is mandatory to access default slot
     // Otherwise Vue warns that slot "default" was invoked outside of the render function
     return () => {
-      const items = flatUnwrap((slots.default && slots.default()) ?? [], ['ul']).map(li => unwrap(li, ['li']))
+      const items = flatUnwrap((slots.default && slots.default()) ?? [], [
+        'ul',
+      ]).map((li) => unwrap(li, ['li']));
 
       return h(
         'ul',
-        items.map(item =>
+        items.map((item) =>
           h('li', [
-            h('span', { class: `list-icon ${props.type}` }, h(resolveComponent('icon'), { name: iconName.value, class: 'icon' })),
-            h('span', h(resolveComponent('ContentSlot'), { use: () => item }))
+            h(
+              'span',
+              { class: `list-icon ${props.type}` },
+              h(resolveComponent('icon'), {
+                name: iconName.value,
+                class: 'icon',
+              })
+            ),
+            h('span', h(resolveComponent('ContentSlot'), { use: () => item })),
           ])
         )
-      )
-    }
-  }
-})
+      );
+    };
+  },
+});
 </script>
 
 <style scoped lang="ts">
 css({
   li: {
-    marginBottom: '{space.3}',
+    marginBottom: '{huyooo.space.3}',
     display: 'flex',
     alignItems: 'flex-start',
     '&:last-child': {
       marginBottom: 0
     },
     '.list-icon': {
-      marginInlineEnd: '{space.3}',
+      marginInlineEnd: '{huyooo.space.3}',
       flexShrink: 0,
       '&.primary': {
         color: '{elements.state.primary.color.primary}'
@@ -80,8 +92,8 @@ css({
         color: '{elements.state.danger.color.primary}'
       },
       '.icon': {
-        width: '{space.6}',
-        height: '{space.6}',
+        width: '{huyooo.space.6}',
+        height: '{huyooo.space.6}',
       }
     }
   }

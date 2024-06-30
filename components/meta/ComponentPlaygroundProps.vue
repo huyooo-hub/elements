@@ -9,45 +9,46 @@
           <ProseCodeInline>
             {{ prop.type }}
           </ProseCodeInline>
-          <Badge v-if="!prop.required">
-            Required
-          </Badge>
+          <Badge v-if="!prop.required"> Required </Badge>
         </span>
       </div>
       <ProseP v-if="prop.description">
         {{ prop.description }}
       </ProseP>
-      <input :value="formData[prop.name]" @change="(event) => propChange(event, prop.name)">
+      <input
+        :value="formData[prop.name]"
+        @change="(event) => propChange(event, prop.name)"
+      />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useVModel } from '@vueuse/core'
+import { useVModel } from '@vueuse/core';
 
 const props = defineProps({
   modelValue: {
     type: Object,
-    required: true
+    required: true,
   },
   componentData: {
     type: Object,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
-const emits = defineEmits(['update:modelValue'])
+const emits = defineEmits(['update:modelValue']);
 
-const formData = useVModel(props, 'modelValue', emits)
+const formData = useVModel(props, 'modelValue', emits);
 
 const propChange = (event: any, propName: any) => {
   formData.value = {
     ...formData.value,
-    [propName]: event.target.value
-  }
-}
+    [propName]: event.target.value,
+  };
+};
 
-const componentProps = computed(() => props?.componentData?.meta?.props)
+const componentProps = computed(() => props?.componentData?.meta?.props);
 </script>
 
 <style lang="ts" scoped>
@@ -58,20 +59,20 @@ css({
     flexDirection: 'column',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
-    my: '{space.4}',
+    my: '{huyooo.space.4}',
     h4: {
       fontSize: '{fontSize.2xl}',
       fontWeight: '{fontWeight.black}',
       lineHeight: '1',
-      my: '{space.4}',
+      my: '{huyooo.space.4}',
       '@mq.md': {
-        my: '{space.0}'
+        my: '{huyooo.space.0}'
       }
     },
     span: {
       display: 'flex',
       alignItems: 'center',
-      gap: '{space.4}',
+      gap: '{huyooo.space.4}',
     },
     '@mq.md': {
       flexDirection: 'row',
@@ -79,8 +80,8 @@ css({
     }
   },
   input: {
-    px: '{space.2}',
-    py: '{space.1}',
+    px: '{huyooo.space.2}',
+    py: '{huyooo.space.1}',
     borderRadius: '{radii.sm}',
     border: '1px solid {color.gray.200}',
     '@dark': {

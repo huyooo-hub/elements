@@ -54,10 +54,10 @@ export default defineTheme({
       },
       maxWidth: '80rem',
       padding: {
-        mobile: '{space.4}',
-        xs: '{space.4}',
-        sm: '{space.6}',
-        md: '{space.6}',
+        mobile: '{huyooo.space.4}',
+        xs: '{huyooo.space.4}',
+        sm: '{huyooo.space.6}',
+        md: '{huyooo.space.6}',
       },
     },
 

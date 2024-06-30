@@ -6,24 +6,26 @@ const props = defineProps({
   type: {
     type: String,
     default: 'info',
-    validator (value: string) {
-      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)
-    }
+    validator(value: string) {
+      return ['info', 'success', 'warning', 'danger', 'primary'].includes(
+        value
+      );
+    },
   },
   modelValue: {
     required: false,
-    default: () => ref(false)
-  }
-})
+    default: () => ref(false),
+  },
+});
 
-const emit = defineEmits(['update:modelValue'])
+const emit = defineEmits(['update:modelValue']);
 
-const isOpen = ref(props.modelValue)
+const isOpen = ref(props.modelValue);
 
 const toggle = () => {
-  isOpen.value = !isOpen.value
-  emit('update:modelValue', isOpen.value)
-}
+  isOpen.value = !isOpen.value;
+  emit('update:modelValue', isOpen.value);
+};
 </script>
 
 <template>
@@ -49,9 +51,9 @@ const toggle = () => {
 css({
   '.callout': {
     position: 'relative',
-    px: '{space.4}',
-    py: '{space.3}',
-    my: '{space.8}',
+    px: '{huyooo.space.4}',
+    py: '{huyooo.space.3}',
+    my: '{huyooo.space.8}',
     fontSize: '{text.sm.fontSize}',
     lineHeight: '{text.sm.lineHeight}',
     borderRadius: '{radii.md}',
@@ -81,13 +83,13 @@ css({
         ':deep(p)': {
           margin: 0,
           '& + p': {
-            marginTop: '{space.2}'
+            marginTop: '{huyooo.space.2}'
           }
         }
       },
       '.icon': {
-        width: '{space.5}',
-        height: '{space.5}',
+        width: '{huyooo.space.5}',
+        height: '{huyooo.space.5}',
         transition: 'transform 100ms',
         '&.rotate': {
           transform: 'rotate(90deg)'
@@ -95,11 +97,11 @@ css({
       }
     },
     '.content': {
-      paddingTop: '{space.3}',
+      paddingTop: '{huyooo.space.3}',
       ':deep(p)': {
         margin: 0,
         '& + p': {
-          marginTop: '{space.2}'
+          marginTop: '{huyooo.space.2}'
         }
       }
     }
